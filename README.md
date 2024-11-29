@@ -1,35 +1,35 @@
-**Django Role Base Access Control Project**
-**Introduction**
-This project implements an Authentication, Authorization, and Role-Based Access Control (RBAC) system using Django.
-It is designed to meet the requirements outlined in the VRV Security Backend Developer Intern Assignment.
-The application demonstrates secure user management with role-specific access to various resources,
-ensuring that users can perform actions based on their assigned roles.
-**Features**
+**Django Role Base Access Control Project**<br>
+**Introduction**<br>
+This project implements an Authentication, Authorization, and Role-Based Access Control (RBAC) system using Django.<br>
+It is designed to meet the requirements outlined in the VRV Security Backend Developer Intern Assignment.<br>
+The application demonstrates secure user management with role-specific access to various resources,<br>
+ensuring that users can perform actions based on their assigned roles.<br>
+**Features**<br>
 
-1. **Authentication**
-Users can register, log in, and log out securely.
-Passwords are hashed using Django’s built-in secure password hashing.
+1. **Authentication**<br>
+Users can register, log in, and log out securely.<br>
+Passwords are hashed using Django’s built-in secure password hashing.<br>
 
-3. **Role-Based Access Control (RBAC)**
-Three roles are defined:
-**Admin**: Has full access to manage users and modify content.
-**Moderator**: Can view and manage specific content.
-**User**: Has restricted access to view only user-specific content.
-Access to views and resources is dynamically controlled based on the user’s role.
-4. **Authorization**
-Only authorized roles can access specific pages or perform specific actions.
-Unauthorized attempts to access restricted pages return a 403 Forbidden error.
+3. **Role-Based Access Control (RBAC)**<br>
+Three roles are defined:<br>
+**Admin**: Has full access to manage users and modify content.<br>
+**Moderator**: Can view and manage specific content.<br>
+**User**: Has restricted access to view only user-specific content.<br>
+Access to views and resources is dynamically controlled based on the user’s role.<br>
+4. **Authorization**<br>
+Only authorized roles can access specific pages or perform specific actions.<br>
+Unauthorized attempts to access restricted pages return a 403 Forbidden error.<br>
 
-**Technical Stack**
-**Backend Framework:** Django
-**Database:** SQLite (default for development purposes)
-**Authentication:** Session-based authentication (with secure password storage)
-**HTML Templates:** Django’s templating engine
+**Technical Stack**<br>
+**Backend Framework:** Django<br>
+**Database:** SQLite (default for development purposes)<br>
+**Authentication:** Session-based authentication (with secure password storage)<br>
+**HTML Templates:** Django’s templating engine<br>
 
-<h3>Setup and Installation</h3>
-Follow the steps below to set up and run the project locally:
+<h3>Setup and Installation</h3><br>
+Follow the steps below to set up and run the project locally:<br>
 
-1. Clone the Repository
+1. **Clone the Repository**<br>
 
 git clone https://github.com/SHAIK-GHOUSE1/Django-RBAC-Project.git
 
@@ -118,3 +118,7 @@ Session Management: Users are authenticated and managed securely.<br>
 Implement JWT-based authentication for API support.<br>
 Add support for more granular permissions for roles.<br>
 Integrate email verification for secure registration.<br>
+**Contact**
+For any questions or clarifications, feel free to reach out to me:<br>
+Shaik Mohammed Ghouse<br>
+Email: shaikghousemohammed045@gmail.com<br>
