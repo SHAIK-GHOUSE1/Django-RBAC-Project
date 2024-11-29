@@ -30,22 +30,27 @@ Unauthorized attempts to access restricted pages return a 403 Forbidden error.
 Follow the steps below to set up and run the project locally:
 
 1. Clone the Repository
+
 git clone https://github.com/SHAIK-GHOUSE1/Django-RBAC-Project.git
+
+
 cd Django-RBAC-Project
-2. Create a Virtual Environment
+
+
+3. Create a Virtual Environment
 python -m venv rbac
 source rbac/bin/activate   # For Linux/Mac
 rbac\Scripts\activate      # For Windows
-3. Install Dependencies
+4. Install Dependencies
 pip install -r requirements.txt
-4. Apply Migrations
+5. Apply Migrations
 python manage.py makemigrations
 python manage.py migrate
-5. Create a Superuser
+6. Create a Superuser
 python manage.py createsuperuser
-6. Run the Server
+7. Run the Server
 python manage.py runserver
-7. Access the Application
+8. Access the Application
 Open your browser and navigate to http://127.0.0.1:8000/.
 Use the superuser credentials to log in to the Django Admin interface at /admin/.
 Usage
