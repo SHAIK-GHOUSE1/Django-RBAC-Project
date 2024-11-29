@@ -87,10 +87,10 @@ Log in with different roles to test access controls.
 Attempt accessing restricted pages (e.g., /admin-dashboard/ as a regular user) to see the 403 Forbidden error.
 Project Structure
 Django-RBAC-Project/
-├── Back_End/                   # Main Django project directory
-│   ├── settings.py             # Project settings
-│   ├── urls.py                 # URL configurations
-│   ├── wsgi.py                 # WSGI application
+├── Back_End/                   # Main Django project directory<br>
+│   ├── settings.py             # Project settings<br>
+│   ├── urls.py                 # URL configurations<br>
+│   ├── wsgi.py                 # WSGI application<br>
 ├── accounts/                   # Accounts app for authentication and RBAC
 │   ├── models.py               # User and role models
 │   ├── views.py                # Views for login, registration, and dashboards
