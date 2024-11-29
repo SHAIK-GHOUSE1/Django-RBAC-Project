@@ -45,29 +45,40 @@ source rbac/bin/activate   # For Linux/Mac
 rbac\Scripts\activate      # For Windows
 
 3. Install Dependencies
+
 pip install -r requirements.txt
 
-5. Apply Migrations
+4. Apply Migrations
+
 python manage.py makemigrations
+
 python manage.py migrate
-6. Create a Superuser
+
+5. Create a Superuser
+
 python manage.py createsuperuser
-7. Run the Server
+
+6. Run the Server
+
 python manage.py runserver
-8. Access the Application
+
+7. Access the Application
+
 Open your browser and navigate to http://127.0.0.1:8000/.
+
 Use the superuser credentials to log in to the Django Admin interface at /admin/.
+
 Usage
 Roles and Access
-Admin:
+**Admin:**
 
 Can log in to the admin dashboard.
 Can manage all users, roles, and permissions.
-Moderator:
+**Moderator:**
 
 Can access the moderator dashboard.
 Has access to specific resources for content management.
-User:
+**User:**
 
 Can log in to the user dashboard.
 Has restricted access to only user-related content.
@@ -101,5 +112,7 @@ Role-Based Permissions: Views are protected based on user roles, ensuring secure
 Session Management: Users are authenticated and managed securely.
 Future Enhancements
 Implement JWT-based authentication for API support.
+
 Add support for more granular permissions for roles.
+
 Integrate email verification for secure registration.
