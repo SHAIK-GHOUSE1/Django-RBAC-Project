@@ -86,33 +86,31 @@ Testing RBAC
 Log in with different roles to test access controls.
 Attempt accessing restricted pages (e.g., /admin-dashboard/ as a regular user) to see the 403 Forbidden error.
 Project Structure
-Django-RBAC-Project/
+Django-RBAC-Project/<br>
 ├── Back_End/                   # Main Django project directory<br>
 │   ├── settings.py             # Project settings<br>
 │   ├── urls.py                 # URL configurations<br>
 │   ├── wsgi.py                 # WSGI application<br>
-├── accounts/                   # Accounts app for authentication and RBAC
-│   ├── models.py               # User and role models
-│   ├── views.py                # Views for login, registration, and dashboards
-│   ├── urls.py                 # App-specific URL patterns
-│   ├── templates/              # HTML templates
-│       ├── home.html           # Home page
-│       ├── login.html          # Login page
-│       ├── register.html       # Registration page
-│       ├── admin_dashboard.html  # Admin-specific dashboard
-│       ├── moderator_dashboard.html  # Moderator-specific dashboard
-│       ├── user_dashboard.html      # User-specific dashboard
-├── db.sqlite3                  # SQLite database
-├── manage.py                   # Django management script
-├── requirements.txt            # Dependencies
-└── README.md                   # Project description
-Security Best Practices Implemented
-Secure Password Hashing: User passwords are stored securely using Django's built-in hashing mechanisms.
-Role-Based Permissions: Views are protected based on user roles, ensuring secure access.
-Session Management: Users are authenticated and managed securely.
-Future Enhancements
-Implement JWT-based authentication for API support.
-
-Add support for more granular permissions for roles.
-
-Integrate email verification for secure registration.
+├── accounts/                   # Accounts app for authentication and RBAC<br>
+│   ├── models.py               # User and role models<br>
+│   ├── views.py                # Views for login, registration, and dashboards<br>
+│   ├── urls.py                 # App-specific URL patterns<br>
+│   ├── templates/              # HTML templates<br>
+│       ├── home.html           # Home page<br>
+│       ├── login.html          # Login page<br>
+│       ├── register.html       # Registration page<br>
+│       ├── admin_dashboard.html  # Admin-specific dashboard<br>
+│       ├── moderator_dashboard.html  # Moderator-specific dashboard<br>
+│       ├── user_dashboard.html      # User-specific dashboard<br>
+├── db.sqlite3                  # SQLite database<br>
+├── manage.py                   # Django management script<br>
+├── requirements.txt            # Dependencies<br>
+└── README.md                   # Project description<br>
+Security Best Practices Implemented<br>
+Secure Password Hashing: User passwords are stored securely using Django's built-in hashing mechanisms.<br>
+Role-Based Permissions: Views are protected based on user roles, ensuring secure access.<br>
+Session Management: Users are authenticated and managed securely.<br>
+**Future Enhancements**
+Implement JWT-based authentication for API support.<br>
+Add support for more granular permissions for roles.<br>
+Integrate email verification for secure registration.<br>
