@@ -37,12 +37,16 @@ git clone https://github.com/SHAIK-GHOUSE1/Django-RBAC-Project.git
 cd Django-RBAC-Project
 
 
-3. Create a Virtual Environment
-python -m venv rbac
+2. **Create a Virtual Environment :**
+      python -m venv rbac
+
 source rbac/bin/activate   # For Linux/Mac
+
 rbac\Scripts\activate      # For Windows
-4. Install Dependencies
+
+3. Install Dependencies
 pip install -r requirements.txt
+
 5. Apply Migrations
 python manage.py makemigrations
 python manage.py migrate
