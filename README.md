@@ -106,10 +106,13 @@ Django-RBAC-Project/<br>
 ├── manage.py                   # Django management script<br>
 ├── requirements.txt            # Dependencies<br>
 └── README.md                   # Project description<br>
+
+
 Security Best Practices Implemented<br>
 Secure Password Hashing: User passwords are stored securely using Django's built-in hashing mechanisms.<br>
 Role-Based Permissions: Views are protected based on user roles, ensuring secure access.<br>
 Session Management: Users are authenticated and managed securely.<br>
+
 **Future Enhancements**
 Implement JWT-based authentication for API support.<br>
 Add support for more granular permissions for roles.<br>
