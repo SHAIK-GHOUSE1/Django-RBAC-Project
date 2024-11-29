@@ -86,6 +86,7 @@ Testing RBAC
 Log in with different roles to test access controls.
 Attempt accessing restricted pages (e.g., /admin-dashboard/ as a regular user) to see the 403 Forbidden error.
 Project Structure
+<pre>
 Django-RBAC-Project/<br>
 ├── Back_End/                   # Main Django project directory<br>
 │   ├── settings.py             # Project settings<br>
@@ -107,7 +108,7 @@ Django-RBAC-Project/<br>
 ├── requirements.txt            # Dependencies<br>
 └── README.md                   # Project description<br>
 
-
+</pre>
 Security Best Practices Implemented<br>
 Secure Password Hashing: User passwords are stored securely using Django's built-in hashing mechanisms.<br>
 Role-Based Permissions: Views are protected based on user roles, ensuring secure access.<br>
