@@ -113,7 +113,7 @@ Secure Password Hashing: User passwords are stored securely using Django's built
 Role-Based Permissions: Views are protected based on user roles, ensuring secure access.<br>
 Session Management: Users are authenticated and managed securely.<br>
 
-**Future Enhancements**
+**Future Enhancements**<br>
 Implement JWT-based authentication for API support.<br>
 Add support for more granular permissions for roles.<br>
 Integrate email verification for secure registration.<br>
