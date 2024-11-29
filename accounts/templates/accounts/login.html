@@ -1,0 +1,6 @@
+<h2>Login</h2>
+<form method="post">
+    {% csrf_token %}  <!-- Token for protection against CSRF attacks -->
+    {{ form.as_p }}   <!-- Render the login form fields -->
+    <button type="submit">Login</button>  <!-- Submit button -->
+</form>

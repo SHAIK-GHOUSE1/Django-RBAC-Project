@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Light cyan background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            color: #333;
+        }
+
+        /* Welcome section styling */
+        .welcome {
+            background: linear-gradient(135deg, #ff99cc, #ff66b2); /* Pink gradient background */
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+            margin-bottom: 30px; /* Space between welcome and buttons */
+        }
+
+        .welcome h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* Login/Register section styling */
+        .auth-message {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        /* Links section (login & register buttons) */
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .links a {
+            text-decoration: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            color: white;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .links a:hover {
+            background-color: #45a049;
+        }
+
+        /* Styling for the message if user is logged in */
+        .auth-message.logged-in {
+            color: #333;
+            background-color: #e0ffe0; /* Light green background for logged-in users */
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        /* Styling for the message if user is not logged in */
+        .auth-message.logged-out {
+            color: #333;
+            background-color: #fff3cd; /* Light yellow background for logged-out users */
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome">
+        <h1>Welcome to Our Platform!</h1>
+
+        {% if user.is_authenticated %}
+            <div class="auth-message logged-in">
+                <p>You are logged in as <strong>{{ user.username }}</strong>.</p>
+                <p><a href="{% url 'logout' %}">Logout</a></p>
+            </div>
+        {% else %}
+            <div class="auth-message logged-out">
+                <p>Login or Register to continue.</p>
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="links">
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'register' %}">Register</a>
+    </div>
+
+</body>
+</html>
