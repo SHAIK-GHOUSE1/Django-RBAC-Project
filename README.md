@@ -1,4 +1,4 @@
-**<h1>Django Role Base Access Control Project<h1>**
+**Django Role Base Access Control Project**
 **Introduction**
 This project implements an Authentication, Authorization, and Role-Based Access Control (RBAC) system using Django.
 It is designed to meet the requirements outlined in the VRV Security Backend Developer Intern Assignment.
